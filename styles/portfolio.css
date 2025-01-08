@@ -141,3 +141,83 @@ padding: 30px;
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.02);
 
 }
+.resume-container{
+    display: flex;
+    gap:71px;
+}
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    /*margin-bottom: 113px;*/
+}
+.resume-colum-title {
+    font-size: 30px;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
+
+}
+.experience-title {
+    font-size: 25px;
+    font-weight: bold;
+    /*margin-bottom: 10px;*/
+}
+.experience-sub-title {
+    font-size: 20px;
+    font-weight: 600px;
+    /*margin-bottom: 20px;*/
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    /*margin-top: 40px;*/
+}
+.footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap:117px;
+}
+.info-icon h2{
+    font-size: 35px;
+    font-weight: bold;
+}
+.info-icon p{
+    font-size: 16px;
+    font-weight:normal;
+}
+.icon {
+display: flex;
+    gap:24px;
+    margin-top: 25px;
+
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.message h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+.input-area{
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    gap: 16px;
+
+}
+.input-area input{
+    padding: 18px 30px;
+
+}
+.message .last{
+    width: 200px;
+}
