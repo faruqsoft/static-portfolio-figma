@@ -33,6 +33,9 @@
     font-weight: normal;
 
 }
+.text-center {
+    text-align: center;
+}
 .secondary-bg {
     background-color: #FFF8F3;
 }
@@ -103,6 +106,8 @@ font-size: 18px;
 main {
     max-width: 1140px;
     margin: 0 auto;
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 
 
@@ -110,7 +115,6 @@ main {
 .about {
     border-radius: 10px;
     padding: 130px 155px;
-    margin-top: 130px;
    align-items: center;
 }
 .about-items {
@@ -122,4 +126,18 @@ main {
 }
 .about-description {
     font-weight: bold;
+}
+
+/*skilss section start*/
+
+.skill-parent {
+    display: flex;
+    gap:24px;
+}
+.skill-type {
+padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.02);
+
 }
