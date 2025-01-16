@@ -6,7 +6,11 @@
                 font-style: normal;
                 font-variation-settings:
                         "wdth" 100;
-            }
+                }
+
+.hide {
+    display: none;
+}
 
 /*shared style*/
 .text-primary {
@@ -16,10 +20,10 @@
     color: #474747;
 }
 .dark-1 {
-    #181818
+    #181818;
 }
 .dark-3 {
-    #757575
+    #757575;
 }
 .section-title {
     font-size: 35px;
@@ -81,6 +85,11 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
 }
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+}
 
 /*banner style*/
 .banner {
@@ -93,7 +102,7 @@ nav ul li a {
 }
 .banner-greetings {
 font-size: 45px;
-font-weight:600px;
+font-weight:600;
 }
 .banner-title {
     font-size: 80px;
@@ -102,6 +111,19 @@ font-weight:600px;
 .banner-description {
 font-size: 18px;
 }
+
+@media screen and (max-width: 576px) {
+
+    .banner {
+        flex-direction: column;
+        margin: 0;
+        padding: 30px;
+    }
+    .banner img {
+       width: 100%;
+    }
+}
+
 /*main style*/
 main {
     max-width: 1140px;
@@ -128,6 +150,14 @@ main {
     font-weight: bold;
 }
 
+@media screen and (max-width: 576px){
+        .about {
+            padding: 30px;
+        }
+    .about-items {
+        flex-direction: column;
+    }
+}
 /*skilss section start*/
 
 .skill-parent {
@@ -138,11 +168,28 @@ main {
 padding: 30px;
     background-color: #FFFFFF;
     border-radius: 5px;
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.02);
+    box-shadow: 0 10px 50px  rgba(0, 0, 0, 0.02);
 
 }
+
+
+@media screen and (max-width: 576px){
+    .skill-parent {
+        flex-direction: column;
+    }
+    .skill-descripyion {
+        text-align:start;
+        padding: 0 30px;
+    }
+}
+
+/*resume style*/
 .resume-container{
+    width: 90%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     gap:71px;
 }
 .section-title {
@@ -163,7 +210,7 @@ padding: 30px;
 }
 .experience-sub-title {
     font-size: 20px;
-    font-weight: 600px;
+    font-weight: 600;
     /*margin-bottom: 20px;*/
 }
 .center-button {
@@ -171,16 +218,33 @@ padding: 30px;
     justify-content: center;
     /*margin-top: 40px;*/
 }
+
+@media screen and (max-width: 576px) {
+    .resume-container{
+        flex-direction: column;
+    }
+}
+
+
+/*footer style*/
 .footer {
-    max-width: 1140px;
+    width: 90%;
     margin: 0 auto;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    background-color: #FFF8F3;
+
 }
 .footer-container {
+    padding: 80px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap:117px;
+
+}
+.info-icon {
+
+  justify-content: center;
+
 }
 .info-icon h2{
     font-size: 35px;
@@ -200,24 +264,38 @@ display: flex;
 .message {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    width: 100%;
+
+
 
 }
 .message h2 {
     font-size: 35px;
     font-weight: bold;
 }
-.input-area{
+.input-area input {
     display: flex;
     flex-direction: column;
-    width: 460px;
-    gap: 16px;
+
+
+
 
 }
-.input-area input{
+.input-area input,textarea{
+    width: 100%;
     padding: 18px 30px;
+    margin-top: 10px;
 
 }
 .message .last{
     width: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .input-area input,textarea {
+        width: calc(100% - 60px);
+    }
 }
